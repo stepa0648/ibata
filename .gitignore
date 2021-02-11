@@ -1,0 +1,12 @@
+ibata.cfg
+.vscode*
+tests/fixtures/config
+*__pycache__
+.idea
+*.env
+.pytest_cache
+__venv__
+build
+dist
+*.egg-info
+docs/_build

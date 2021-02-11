@@ -1,0 +1,166 @@
+action: GLOB, msg: packaging
+cwd: /home/severste/Dropbox/skola/semestr3/PYT/hw/ni-pyt-semestral-work
+cmd: /usr/bin/python3 setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing ibata.egg-info/PKG-INFO
+writing dependency_links to ibata.egg-info/dependency_links.txt
+writing entry points to ibata.egg-info/entry_points.txt
+writing requirements to ibata.egg-info/requires.txt
+writing top-level names to ibata.egg-info/top_level.txt
+reading manifest file 'ibata.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'ibata.egg-info/SOURCES.txt'
+running check
+/usr/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'summary'
+  warnings.warn(msg)
+warning: check: missing required meta-data: url
+
+creating ibata-0.0.1
+creating ibata-0.0.1/ibata
+creating ibata-0.0.1/ibata.egg-info
+creating ibata-0.0.1/ibata/downloaders
+creating ibata-0.0.1/ibata/utils
+creating ibata-0.0.1/tests
+creating ibata-0.0.1/tests/__pycache__
+creating ibata-0.0.1/tests/fixtures
+creating ibata-0.0.1/tests/fixtures/cassettes
+copying files to ibata-0.0.1...
+copying LICENSE -> ibata-0.0.1
+copying MANIFEST.in -> ibata-0.0.1
+copying README.rst -> ibata-0.0.1
+copying setup.py -> ibata-0.0.1
+copying tox.ini -> ibata-0.0.1
+copying ibata/CategoriesSummary.py -> ibata-0.0.1/ibata
+copying ibata/Category.py -> ibata-0.0.1/ibata
+copying ibata/Transaction.py -> ibata-0.0.1/ibata
+copying ibata/TransactionAnalyzer.py -> ibata-0.0.1/ibata
+copying ibata/__init__.py -> ibata-0.0.1/ibata
+copying ibata/__main__.py -> ibata-0.0.1/ibata
+copying ibata/cli_app.py -> ibata-0.0.1/ibata
+copying ibata/ibata.py -> ibata-0.0.1/ibata
+copying ibata.egg-info/PKG-INFO -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/SOURCES.txt -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/dependency_links.txt -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/entry_points.txt -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/not-zip-safe -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/requires.txt -> ibata-0.0.1/ibata.egg-info
+copying ibata.egg-info/top_level.txt -> ibata-0.0.1/ibata.egg-info
+copying ibata/downloaders/FioTransactionDownloader.py -> ibata-0.0.1/ibata/downloaders
+copying ibata/downloaders/TransactionDownloader.py -> ibata-0.0.1/ibata/downloaders
+copying ibata/downloaders/TransactionDownloaderResolver.py -> ibata-0.0.1/ibata/downloaders
+copying ibata/downloaders/__init__.py -> ibata-0.0.1/ibata/downloaders
+copying ibata/utils/CategoriesManager.py -> ibata-0.0.1/ibata/utils
+copying ibata/utils/Helper.py -> ibata-0.0.1/ibata/utils
+copying ibata/utils/MyJSONEncoder.py -> ibata-0.0.1/ibata/utils
+copying ibata/utils/PlotMaker.py -> ibata-0.0.1/ibata/utils
+copying ibata/utils/ResultSaver.py -> ibata-0.0.1/ibata/utils
+copying ibata/utils/__init__.py -> ibata-0.0.1/ibata/utils
+copying tests/conftest.py -> ibata-0.0.1/tests
+copying tests/test_categories_manager.py -> ibata-0.0.1/tests
+copying tests/test_categories_summary.py -> ibata-0.0.1/tests
+copying tests/test_category.py -> ibata-0.0.1/tests
+copying tests/test_cli_app.py -> ibata-0.0.1/tests
+copying tests/test_fio_transaction_downloader.py -> ibata-0.0.1/tests
+copying tests/test_helper.py -> ibata-0.0.1/tests
+copying tests/test_result_saver.py -> ibata-0.0.1/tests
+copying tests/test_transaction.py -> ibata-0.0.1/tests
+copying tests/test_transaction_analyzer.py -> ibata-0.0.1/tests
+copying tests/test_transaction_downloader_resolver.py -> ibata-0.0.1/tests
+copying tests/__pycache__/conftest.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_categories_manager.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_categories_summary.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_category.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_cli_app.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_fio_transaction_downloader.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_helper.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_result_saver.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_transaction.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_transaction_analyzer.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/__pycache__/test_transaction_downloader_resolver.cpython-38-pytest-6.2.1.pyc -> ibata-0.0.1/tests/__pycache__
+copying tests/fixtures/categories_ok.json -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/categories_wrong.json -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_no_categories.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_no_categories_file.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_no_fio_section.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_no_token.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_not_existing_categories.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_ok.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/ibata_wrong_categories.cfg -> ibata-0.0.1/tests/fixtures
+copying tests/fixtures/cassettes/test_fio_transaction_downloader.test_get_transactions.json -> ibata-0.0.1/tests/fixtures/cassettes
+Writing ibata-0.0.1/setup.cfg
+creating '.tox/dist/ibata-0.0.1.zip' and adding 'ibata-0.0.1' to it
+adding 'ibata-0.0.1'
+adding 'ibata-0.0.1/ibata'
+adding 'ibata-0.0.1/ibata.egg-info'
+adding 'ibata-0.0.1/tests'
+adding 'ibata-0.0.1/MANIFEST.in'
+adding 'ibata-0.0.1/README.rst'
+adding 'ibata-0.0.1/LICENSE'
+adding 'ibata-0.0.1/setup.cfg'
+adding 'ibata-0.0.1/PKG-INFO'
+adding 'ibata-0.0.1/setup.py'
+adding 'ibata-0.0.1/tox.ini'
+adding 'ibata-0.0.1/ibata/downloaders'
+adding 'ibata-0.0.1/ibata/utils'
+adding 'ibata-0.0.1/ibata/TransactionAnalyzer.py'
+adding 'ibata-0.0.1/ibata/CategoriesSummary.py'
+adding 'ibata-0.0.1/ibata/__main__.py'
+adding 'ibata-0.0.1/ibata/ibata.py'
+adding 'ibata-0.0.1/ibata/__init__.py'
+adding 'ibata-0.0.1/ibata/Transaction.py'
+adding 'ibata-0.0.1/ibata/Category.py'
+adding 'ibata-0.0.1/ibata/cli_app.py'
+adding 'ibata-0.0.1/ibata/downloaders/FioTransactionDownloader.py'
+adding 'ibata-0.0.1/ibata/downloaders/__init__.py'
+adding 'ibata-0.0.1/ibata/downloaders/TransactionDownloaderResolver.py'
+adding 'ibata-0.0.1/ibata/downloaders/TransactionDownloader.py'
+adding 'ibata-0.0.1/ibata/utils/__init__.py'
+adding 'ibata-0.0.1/ibata/utils/CategoriesManager.py'
+adding 'ibata-0.0.1/ibata/utils/PlotMaker.py'
+adding 'ibata-0.0.1/ibata/utils/ResultSaver.py'
+adding 'ibata-0.0.1/ibata/utils/MyJSONEncoder.py'
+adding 'ibata-0.0.1/ibata/utils/Helper.py'
+adding 'ibata-0.0.1/ibata.egg-info/dependency_links.txt'
+adding 'ibata-0.0.1/ibata.egg-info/top_level.txt'
+adding 'ibata-0.0.1/ibata.egg-info/not-zip-safe'
+adding 'ibata-0.0.1/ibata.egg-info/PKG-INFO'
+adding 'ibata-0.0.1/ibata.egg-info/entry_points.txt'
+adding 'ibata-0.0.1/ibata.egg-info/requires.txt'
+adding 'ibata-0.0.1/ibata.egg-info/SOURCES.txt'
+adding 'ibata-0.0.1/tests/__pycache__'
+adding 'ibata-0.0.1/tests/fixtures'
+adding 'ibata-0.0.1/tests/test_result_saver.py'
+adding 'ibata-0.0.1/tests/test_transaction.py'
+adding 'ibata-0.0.1/tests/test_fio_transaction_downloader.py'
+adding 'ibata-0.0.1/tests/test_transaction_downloader_resolver.py'
+adding 'ibata-0.0.1/tests/test_helper.py'
+adding 'ibata-0.0.1/tests/conftest.py'
+adding 'ibata-0.0.1/tests/test_category.py'
+adding 'ibata-0.0.1/tests/test_categories_manager.py'
+adding 'ibata-0.0.1/tests/test_categories_summary.py'
+adding 'ibata-0.0.1/tests/test_cli_app.py'
+adding 'ibata-0.0.1/tests/test_transaction_analyzer.py'
+adding 'ibata-0.0.1/tests/__pycache__/test_categories_manager.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_fio_transaction_downloader.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/conftest.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_cli_app.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_transaction_downloader_resolver.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_categories_summary.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_category.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_transaction.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_helper.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_result_saver.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/__pycache__/test_transaction_analyzer.cpython-38-pytest-6.2.1.pyc'
+adding 'ibata-0.0.1/tests/fixtures/cassettes'
+adding 'ibata-0.0.1/tests/fixtures/categories_wrong.json'
+adding 'ibata-0.0.1/tests/fixtures/ibata_no_categories.cfg'
+adding 'ibata-0.0.1/tests/fixtures/ibata_no_categories_file.cfg'
+adding 'ibata-0.0.1/tests/fixtures/ibata_wrong_categories.cfg'
+adding 'ibata-0.0.1/tests/fixtures/ibata_not_existing_categories.cfg'
+adding 'ibata-0.0.1/tests/fixtures/ibata_no_fio_section.cfg'
+adding 'ibata-0.0.1/tests/fixtures/ibata_ok.cfg'
+adding 'ibata-0.0.1/tests/fixtures/categories_ok.json'
+adding 'ibata-0.0.1/tests/fixtures/ibata_no_token.cfg'
+adding 'ibata-0.0.1/tests/fixtures/cassettes/test_fio_transaction_downloader.test_get_transactions.json'
+removing 'ibata-0.0.1' (and everything under it)

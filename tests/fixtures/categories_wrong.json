@@ -1,0 +1,232 @@
+[
+  {
+    "name": "supermarket",
+    "name_pretty": "Supermarket",
+    "data": [
+      "billa",
+      "kaufland",
+      "rohlík",
+      "rohlik",
+      "tesco",
+      "lidl",
+      "albert",
+      "penny",
+      "globus",
+      "zabka",
+      "coop"
+  },
+  {
+    "name": "food",
+    "name_pretty": "Potraviny",
+    "data": [
+      "forkys",
+      "bageterie",
+      "restaurace",
+      "cafe",
+      "gril",
+      "kavy",
+      "restaurant",
+      "bb",
+      "hospoda",
+      "jidelna",
+      "delmart",
+      "food",
+      "caphe",
+      "kavarna",
+      "kfc",
+      "coca-cola",
+      "potraviny",
+      "bistro",
+      "avion58",
+      "lafavorita",
+      "sushi",
+      "gelateria",
+      "pokehaus",
+      "vegan",
+      "vyziva",
+      "bombay express",
+      "soupculture",
+      "cukrarna",
+      "360pizza",
+      "pekarstv",
+      "wolt",
+      "orbisfood",
+      "fries"
+    ]
+  },
+  {
+    "name": "electronics",
+    "name_pretty": "Elektronika",
+    "data": [
+      "alza.cz",
+      "alza",
+      "czc.cz",
+      "elektro",
+      "datart",
+      "lg"
+    ]
+  },
+  {
+    "name": "drugstore",
+    "name_pretty": "Drogerie",
+    "data": [
+      "drogerie"
+    ]
+  },
+  {
+    "name": "accomodation",
+    "name_pretty": "Nábytek&Domácnost",
+    "data": [
+      "ikea",
+      "pepco",
+      "jysk",
+      "orion",
+      "vivantis",
+      "kik",
+      "kuchynske potreby"
+    ]
+  },
+  {
+    "name": "health",
+    "name_pretty": "Zdraví",
+    "data": [
+      "gynekologie",
+      "lekarna",
+      "devident",
+      "ordinace",
+      "pharmgest",
+      "benu",
+      "lékárna"
+    ]
+  },
+  {
+    "name": "zverimex",
+    "name_pretty": "Zverimex",
+    "data": [
+      "petcenter",
+      "akvazoo",
+      "zoo",
+      "cvrčci"
+    ]
+  },
+  {
+    "name": "household",
+    "name_pretty": "Domácnost",
+    "data": [
+      "nájem",
+      "elektřina",
+      "internet"
+    ]
+  },
+  {
+    "name": "finance",
+    "name_pretty": "Finance",
+    "data": [
+      "revolut",
+      "bankomatu",
+      "platební"
+    ]
+  },
+  {
+    "name": "insurance",
+    "name_pretty": "Pojištění",
+    "data": [
+      "pojištění"
+    ]
+  },
+  {
+    "name": "transport",
+    "name_pretty": "Doprava",
+    "data": [
+      "benzina",
+      "uniqway",
+      "dpp",
+      "lítačka",
+      "train",
+      "tankstelle",
+      "jízdenka",
+      "sts",
+      "csphm",
+      "tank",
+      "robin oil",
+      "pneuservis",
+      "omv",
+      "cst",
+      "parkoviste"
+    ]
+  },
+  {
+    "name": "hobby",
+    "name_pretty": "Hobby",
+    "data": [
+      "obi",
+      "hornbach",
+      "papirnictvi",
+      "creativeday",
+      "mcpen",
+      "zelezarstvi",
+      "mariz",
+      "evytvarka"
+    ]
+  },
+  {
+    "name": "entertainment",
+    "name_pretty": "Zábava",
+    "data": [
+      "netflix",
+      "lasergame",
+      "her"
+    ]
+  },
+  {
+    "name": "books",
+    "name_pretty": "Knihy",
+    "data": [
+      "knihkupectvi",
+      "kanzelsberger",
+      "kuchařka",
+      "kuchařky",
+      "luxor",
+      "knihy",
+      "apokryf"
+    ]
+  },
+  {
+    "name": "sport",
+    "name_pretty": "Sport",
+    "data": [
+      "sportisimo",
+      "decathlon",
+      "rock point",
+      "jóga",
+      "joga",
+      "teribear"
+    ]
+  },
+  {
+    "name": "flower",
+    "name_pretty": "Květiny",
+    "data": [
+      "kvetiny",
+      "kvetinovy"
+    ]
+  },
+  {
+    "name": "clothes&shoes",
+    "name_pretty": "Oblečení&Boty",
+    "data": [
+      "m&s",
+      "obuv",
+      "ccc",
+      "sinsay",
+      "elka"
+    ]
+  },
+  {
+    "name": "saving",
+    "name_pretty": "Úspory",
+    "data": [
+      "moneta"
+    ]
+  }
+]
