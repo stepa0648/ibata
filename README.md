@@ -33,6 +33,11 @@ All options can be showed by ``ibata --help``.
                                       downloaded and parsed. Format is YYYY-MM-DD.
                                       [Required if -e flag is missing]
 
+      -m, --month DATE                Year and month from which the transactions
+                                      are being downloaded and parsed. Format is
+                                      YYYY-MM.[Required if -e, -f and -t flags are
+                                      missing]
+
       -b, --bank ['FIO']              Bank from which will be transactions
                                       downloaded. Default: FIO
 
