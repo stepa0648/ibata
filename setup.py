@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
+with open('README.md') as f:
     long_description = ''.join(f.readlines())
 
 setup(
@@ -8,16 +8,15 @@ setup(
     version='0.0.4',
     description='A tool for analyzing bank transactions',
     long_description=long_description,
-    author='Štěpán Severa',
-    author_email='severste@fit.cvut.cz',
+    author='stepa0648',
     keywords='cli, bank, transaction',
     summary='A tool for analyzing bank transactions',
-    license='CC0',
+    license='MIT',
     packages=find_packages(),
     package_data={'tests': ['tests']},
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
+        'License :: MIT License',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
