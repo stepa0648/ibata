@@ -1,6 +1,7 @@
 import configparser
 import json
 import re
+import calendar
 
 import click
 
@@ -35,6 +36,15 @@ def check_valid_date(ctx, param, value):
     else:
         raise click.BadParameter(
             'not valid date format. Must be YYYY-MM-DD')
+
+def check_valid_year_month(ctx, param, value):
+    if value is None:
+        return value
+    if re.match('^((?:19|20)[0-9]{2})-(0?[1-9]|1[0-2])$', value):
+        return value
+    else:
+        raise click.BadParameter(
+            'not valid date format. Must be YYYY-MM')
 
 
 def check_valid_dates(date_from, date_to):
@@ -96,6 +106,12 @@ def validate_save_format(ctx, param, value):
         raise click.BadParameter(
             'not valid save format. Must be [TXT|JSON|CSV]')
 
+def get_dates_from_year_month(year_month):
+    date_from = year_month + "-01"
+    split_year_month = year_month.split("-")
+    date_to = year_month + "-" + str(calendar.monthrange(int(split_year_month[0]), int(split_year_month[1]))[1])
+    return date_from, date_to
+
 
 @click.command()
 @click.version_option(version=0.1, help='Show the version and exit.')
@@ -106,11 +122,15 @@ def validate_save_format(ctx, param, value):
 @click.option('-f', '--from', 'date_from', metavar="DATE",
               callback=check_valid_date,
               help='Date from which the transactions are being downloaded and parsed. Format is YYYY-MM-DD. '
-                   '[Required if -e flag is missing]')
+                   '[Required if -e and -m flags are missing]')
 @click.option('-t', '--to', 'date_to', metavar="DATE",
               callback=check_valid_date,
               help='Date to which the transactions are being downloaded and parsed. Format is YYYY-MM-DD. '
-                   '[Required if -e flag is missing]')
+                   '[Required if -e and -m flags are missing]')
+@click.option('-m', '--month', 'year_month', metavar="DATE",
+              callback=check_valid_year_month,
+              help='Year and month from which the transactions are being downloaded and parsed. Format is YYYY-MM.'
+                   '[Required if -e, -f and -t flags are missing]')
 @click.option('-b', '--bank', default=DEFAULT_BANK, metavar=BANKS_METAVAR,
               callback=check_valid_bank,
               help='Bank from which will be transactions downloaded. Default: FIO')
@@ -126,11 +146,13 @@ def validate_save_format(ctx, param, value):
               callback=validate_save_format)
 @click.option('-e', '--edit', '--edit-categories', is_flag=True,
               help='If present app enters editation mode for categories and other options are ignored.')
-def ibata(config, date_from, date_to, bank, output_format, plot, save_as, edit):
+def ibata(config, date_from, date_to, year_month, bank, output_format, plot, save_as, edit):
     """A tool for analyzing bank transactions"""
     if edit:
         CategoriesManager.edit_categories(config)
         exit(0)
+    if year_month:
+        date_from, date_to = get_dates_from_year_month(year_month)
     check_valid_dates(date_from, date_to)
     transaction_downloader = TransactionDownloaderResolver.get_transaction_downloader(config, bank)
     transactions = transaction_downloader.get_transactions(date_from, date_to)
