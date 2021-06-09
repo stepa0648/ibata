@@ -1,10 +1,5 @@
-# IBATA - Internet Banking transaction analyzator
+# IBATA - Internet Banking transactions analyzator
 Author: Štěpán Severa (stepa0648)
-
-IBATA is Internet BAnking Transactions Analyzator.
-
-This app is console application that works as transaction organizer of payment transactions. It will download transaction from bank API and then it will organize them into different categories. After that it will provide some charts of how many user spent in which category.
-
 
 ## Basic info
 
