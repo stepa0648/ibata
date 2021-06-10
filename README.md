@@ -62,7 +62,8 @@ All options can be showed by ``ibata --help``.
   --help                          Show this message and exit.
 ```
 
-
+#### Ignoring transaction
+If you want some transaction to be ignored, just add `[ignore]` in the transaction note in your Internet Banking.
 
 ### Config file
 

@@ -31,7 +31,7 @@ class Transaction:
         :return: list of text values, which should be considered in transaction categorization
         """
         data = []
-        Helper.append_values_if_not_none(data, [self.message_for_payee, self.user_identification, self.note])
+        Helper.append_values_if_not_none(data, [self.note, self.message_for_payee, self.user_identification])
         return data
 
     def print_inline(self):

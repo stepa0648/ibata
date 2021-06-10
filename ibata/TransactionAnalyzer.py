@@ -27,8 +27,13 @@ class TransactionAnalyzer:
 
         :param analysis_data: data from transaction that should be check for category info
         """
+        print("One transaction: ####################################################################################")
         for data in analysis_data:
             transaction_note = data.lower()
+            print(f"Checking: {transaction_note}")
+            if re.search(r"\[ignore]", transaction_note):
+                print("[ignore] found")
+                return None
             for category in self.categories_json:
                 for shop in category["data"]:
                     if re.search(rf"\b{shop}\b", transaction_note):
